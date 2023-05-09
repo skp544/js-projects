@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Currency-Convertor</title>
+  </head>
+  <body>
+    <section class="main">
+      <h1>Simple Currency Convertor</h1>
+      <div class="container box">
+        <div class="converter">
+          <!-- base conersion -->
+          <div class="base-convert">
+            <p>Exchange Rate</p>
+            <span class="base">1 USD = 81.73 INR</span>
+          </div>
+
+          <!-- text from and to -->
+
+          <div class="text">
+            <p>From</p>
+            <p>To</p>
+          </div>
+
+          <!-- main conversion -->
+          <div class="main-convert">
+            <!-- from -->
+            <div class="cur-box">
+              <div class="currency from">
+                <img
+                  src="https://www.worldometers.info/img/flags/us-flag.gif"
+                  alt=""
+                />
+                <select class="cur-1">
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="USD" selected>USD</option>
+                  <option value="INR">INR</option>
+                </select>
+              </div>
+              <input type="text" class="cur-1-input" placeholder="0" />
+            </div>
+
+            <!-- switch button -->
+
+            <div class="switch-cur">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+
+            <!-- to  -->
+            <div class="cur-box">
+              <div class="currency to">
+                <img
+                  src="https://www.worldometers.info/img/flags/in-flag.gif"
+                  alt="flag"
+                />
+                <select class="cur-2">
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="USD">USD</option>
+                  <option value="INR" selected>INR</option>
+                </select>
+              </div>
+              <input type="text" class="cur-2-input" placeholder="0.00" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- scripts -->
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

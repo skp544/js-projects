@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--light-blue);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  justify-items: center;
+  gap: 1.1rem;
+}
+
+.coupon {
+  padding: 1.2rem 4rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #777;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.btn {
+  padding: 1.6rem 2rem;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 500;
+  transition: all 200ms;
+}
+
+.btn:hover {
+  color: var(--light-blue);
+  background-color: #fff;
+}
