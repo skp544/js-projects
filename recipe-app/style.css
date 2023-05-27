@@ -223,3 +223,9 @@ input {
   text-decoration: none;
   color: var(--white);
 }
+
+@media screen and (max-width: 600px) {
+  .meal-search {
+    width: 90%;
+  }
+}
