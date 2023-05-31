@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Card-Payment-UI</title>
+  </head>
+  <body>
+    <section class="main">
+      <div class="container box">
+        <div class="payment">
+          <!-- header -->
+          <div class="header">
+            <h1 class="logo">Pay</h1>
+            <p>SKP</p>
+          </div>
+          <!-- content -->
+          <div class="content">
+            <div class="amount">
+              <p>INR <span>100.00</span></p>
+              <span>example@gmail.com</span>
+            </div>
+            <form action="">
+              <div class="card-details">
+                <!-- number -->
+                <div class="number">
+                  <label for="">Card Number</label>
+                  <input
+                    type="text"
+                    id="number"
+                    placeholder="0000 0000 0000 0000"
+                  />
+                  <img src="./images/credit-card.png" alt="credit-card" />
+                </div>
+                <!-- valid  -->
+                <div class="valid">
+                  <label for="">Valid Till</label>
+                  <input type="text" id="valid" placeholder="MM / YY" />
+                </div>
+
+                <!-- CVV -->
+                <div class="cvv">
+                  <label for="">CVV</label>
+                  <input type="text" id="cvv" placeholder="123" />
+                  <span>What is this?</span>
+                </div>
+              </div>
+
+              <!-- remember  -->
+              <div class="remember">
+                <input type="checkbox" id="remem-check" />
+                <label for="remem-check">
+                  <span>Remember this card next time</span>
+                </label>
+              </div>
+
+              <!-- button  -->
+
+              <div class="button">
+                <button class="btn">Pay ₹100.00</button>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- secured by -->
+        <div class="secure">
+          <i class="fas fa-lock"></i>
+          <span>Secured by Razorpay</span>
+        </div>
+      </div>
+    </section>
+    <!-- scripts -->
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
